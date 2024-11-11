@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <screen>
+      <div class="nav row">
+        <div>
+          <p>یکشنبه - ۲۰ آبان ۱۴۰۳        </p>
+          <h5>امتحانات نزدیک</h5>
+        </div>
+        <button class="secondary circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" onclick="openAlert()" >
+            <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+          </svg></button>
+      </div>
+      <div class="column">
+        <glob id="glob-2"></glob>
+        <div class="row">
+          <div class="widget secondary split home-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+            </svg>
+            </svg>
+            <h5>ریاضی - شنبه</h5>
+            <p class="muted">از اول تا جایی که خواندیم</p>
+          </div>
+
+<div id="alert" class="alert">
+    <div class="alert-inner">
+      <div class="alert-left">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="alert-icon">
+          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="alert-body">
+        <h4 class="alert-title">به زودی ... </h4>
+        <div class="alert-text">
+          <p>این بخش در حال توسعه است </p>
+        </div>
+      </div>
+    </div>
+  </div>
+          <!-- <div class="widget secondary split home-item">
+            <notification>
+              <p>2</p>
+            </notification>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376V479.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z" />
+            </svg>
+            <h5>Chats</h5>
+            <p class="muted">2 new pings</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="widget secondary split home-item">
+            <notification>
+              <p>1</p>
+            </notification>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z" />
+            </svg>
+            <h5>Grades</h5>
+            <p class="muted">1 new grade</p>
+          </div>
+          <div class="widget primary split home-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+            </svg>
+            <h5>More</h5>
+            <p class="muted">More stuff</p>
+          </div>
+        </div> -->
+      </div>
+      <div class="column">
+        <div>
+          <h5>درس ها</h5>
+          <p class="muted">برنامه روزانه و مشق ها</p>
+        </div>
+        <div class="widget secondary">
+          <h5>کار و فناوری</h5>
+          <small class="muted">نتیجه امتحان درس مقیاس +‌ درس جدید</small>
+        </div>
+        <div class="widget secondary">
+          <h5>مطالعات اجتماعی</h5>
+          <small class="muted">آمادگی برای پرسش شفاهی درس جدید</small>
+        </div>
+        <div class="widget secondary">
+          <h5>علـــوم</h5>
+          <small class="muted">نتیجه امتحان سه شنبه </small>
+        </div>
+        <small class="center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"></svg>  </small>
+    </screen>
+  </body>
+  <script>"use strict";
+
+// function openAlert() {
+//   const button = document.getElementById("alert");
+//   button.classList.add("active");
+//   button.style.display = "block";
+
+//   setTimeout(() => {
+//     button.classList.remove("active");
+//     button.classList.add("hide");
+//     setTimeout(() => {
+//       button.style.display = "none";
+//       button.classList.remove("hide");
+//     }, 500);
+//   }, 5000);
+// }
+</script>
+<small style="color: rgb(170, 170, 170); font-size: 15px;" class="muted">ساخته شده توسط پارسا مصطفی زاده</small>
+</html>
