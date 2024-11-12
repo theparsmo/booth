@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
     <screen>
       <div class="nav row">
         <div>
-          <p>سه شنبه - ۲۲ آبان ۱۴۰۳ </p>
+          <p>چهارشنبه - ۲۳ آبان ۱۴۰۳ </p>
           <h5>امتحانات نزدیک</h5>
         </div>
-        <button class="secondary circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" onclick="openAlert()" >
-            <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
-          </svg></button>
+        <div class="secondary circle" onclick="win()">
+          <img src="https://www.slazzer.com/downloads/36e24afd-a130-11ef-a84d-b347d7ab6478/image_prev_ui.png" style="width: 40px; height: 40px; margin: 5px 5px;" alt="" srcset="">
+        </div>
       </div>
       <div class="column">
         <glob id="glob-2"></glob>
@@ -97,22 +99,11 @@
         <small class="center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"></svg>  </small>
     </screen>
   </body>
-  <script>"use strict";
 
-// function openAlert() {
-//   const button = document.getElementById("alert");
-//   button.classList.add("active");
-//   button.style.display = "block";
-
-//   setTimeout(() => {
-//     button.classList.remove("active");
-//     button.classList.add("hide");
-//     setTimeout(() => {
-//       button.style.display = "none";
-//       button.classList.remove("hide");
-//     }, 500);
-//   }, 5000);
-// }
-</script>
 <small style="color: rgb(170, 170, 170); font-size: 15px;" class="muted">ساخته شده توسط پارسا مصطفی زاده</small>
+<script>
+  function win() {
+    window.open("./chat.html")
+  }
+</script>
 </html>
